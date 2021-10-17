@@ -6,10 +6,7 @@ from django.utils.crypto import get_random_string
 from rest_framework import serializers
 from rest_framework_simplejwt.tokens import RefreshToken
 
-from .models import (
-    UserRegistration, Category, Genre,
-    Title, Review, Comment
-)
+from .models import Category, Comment, Genre, Review, Title, UserRegistration
 
 User = get_user_model()
 
