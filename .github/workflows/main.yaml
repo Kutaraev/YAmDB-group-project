@@ -47,5 +47,5 @@ jobs:
         uses: docker/build-push-action@v2 # Выполняет push образа в DockerHub 
         with:
           push: true
-          tags: kutaraev/final_web, kuataraev/final_postgres, kutaraev/final_nginx 
+          tags: kutaraev/final_web, kutaraev/final_postgres, kutaraev/final_nginx 
 
