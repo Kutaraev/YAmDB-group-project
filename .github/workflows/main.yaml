@@ -62,8 +62,8 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           stack_file_name: docker-compose.yaml
           script: |
-            sudo docker pull kutaraev/final_web
             sudo docker pull kutaraev/final_postgres
+            sudo docker pull kutaraev/final_web
             sudo docker pull kutaraev/final_nginx
             sudo docker-compose stop
             sudo docker-compose rm web
