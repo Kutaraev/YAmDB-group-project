@@ -62,7 +62,7 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           stack_file_name: docker-compose.yaml
           script: |
-            sudo docker pull <имя-пользователя>/<имя-репозитория>
+            sudo docker pull kutaraev/final_web, kutaraev/final_postgres, kutaraev/final_nginx
             sudo docker-compose stop
             sudo docker-compose rm web
             # Создаст файл для переменных окружения
