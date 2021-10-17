@@ -19,6 +19,7 @@ class RoleField(serializers.ChoiceField):
         for key, value in self._choices.items():
             if value == data:
                 return key
+            return 1
         self.fail('invalid_choice', input=data)
 
 
