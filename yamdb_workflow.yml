@@ -25,6 +25,7 @@ jobs:
         pytest
 
   build_and_push_to_docker_hub:
+    if: github.ref == 'refs/heads/master'
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     needs: tests
@@ -46,6 +47,7 @@ jobs:
           tags: kutaraev/final_web, kutaraev/final_postgres, kutaraev/final_nginx 
 
   deploy:
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     steps:
