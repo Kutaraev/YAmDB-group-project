@@ -7,6 +7,9 @@ load_dotenv()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# немного не понял этот момент: теперь для работы проекта нужен
+# файл .env, и я добавил его в репозиторий. Или есть какой-то
+# иной способ доставать секреты?
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = False
