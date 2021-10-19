@@ -3,7 +3,7 @@
 # api_yamdb
 Проект представляет собой бэкенд и REST API для агрегатора отзывов YaMDb.
 
-Ссылка на проект - `http://84.201.138.107`
+Ссылка на проект - http://84.201.138.107
 
 ## Описание
 Проект YaMDb собирает отзывы пользователь на произведения. Произведения делятся на категории (например «Книги», «Фильмы», «Музыка»). Список категорий может быть расширен администратором.  
@@ -29,23 +29,23 @@
 ## Установка
 
 1. Установите Docker на ваш компьютер  
- `https://docs.docker.com/engine/install/`
+ https://docs.docker.com/engine/install/
 
 2. Скачать необходимые образы с Docker Hub
    (Внимание: Docker должен быть установлен на вашем компьютере)
- ```
+ ```console
     docker pull kutaraev/db:v1.0
     docker pull kutaraev/web:v1.0
     docker pull kutaraev/nginx:v1.0
 ```
 3. Запустить Docker-compose
- ```
+ ```console
     docker docker-compose up
 ```
 
 ## Создание суперпользователя
 Для создания суперпользователя нужно ввести в терминале комнду
-```
+```console
 docker-compose exec web python manage.py createsuperuser
 ```
 и ввести следующие данные:
