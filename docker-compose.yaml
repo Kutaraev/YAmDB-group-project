@@ -12,8 +12,8 @@ services:
     build: .
     restart: always
     volumes:
-      - static_value:/code/yamdb_final/static/
-      - media_value:/code/yamdb_final/media/
+      - static_value:/code/static/
+      - media_value:/code/media/
     depends_on:
       - db
     env_file:
